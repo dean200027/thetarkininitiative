@@ -248,6 +248,7 @@ focus_tree = {
 				recruit_character = PRO_koska_reeves
 				recruit_character = PRO_axe_woves
 			}
+			country_event = PRO.2
 		}
 	}
 	focus = {
@@ -946,6 +947,7 @@ focus_tree = {
 		}
 		cost = 5
 		completion_reward = {
+			country_event = PRO.20
 		}
 	}
 	focus = {
@@ -963,7 +965,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRO_Clan_Kyrze
+		id = PRO_Support_Clan_Kyrze
 		icon = GFX_PRO_Clan_Kyrze
 		prerequisite = { focus = PRO_Betrayed_Again }
 		mutually_exclusive = { focus = PRO_Clan_Mudhorn }
@@ -972,6 +974,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		completion_reward = {
+			set_cosmetic_tag = KRY
 			PRO_the_mandalorian = { 
 				retire = yes 
 			}
@@ -982,19 +985,20 @@ focus_tree = {
 		id = PRO_Clan_Mudhorn
 		icon = GFX_PRO_Clan_Mudhorn
 		prerequisite = { focus = PRO_Betrayed_Again }
-		mutually_exclusive = { focus = PRO_Clan_Kyrze }
+		mutually_exclusive = { focus = PRO_Support_Clan_Kyrze }
 		relative_position_id = PRO_Betrayed_Again	
 		x = 1
 		y = 1
 		cost = 5
 		completion_reward = {
+			set_cosmetic_tag = PRO_Watch_democratic
 			promote_character = {
 				character = PRO_the_mandalorian
 				ideology = aristocracy
 			}
 			load_oob = PRO_Children_Of_The_Watch
 			hidden_effect = {
-				add_manpower = 10000
+				add_manpower = 1200
 			}
 			PRO_bo_katan_kryze = { 
 				retire = yes 
@@ -1013,13 +1017,21 @@ focus_tree = {
 		id = PRO_United_Again
 		icon = GFX_PRO_United_Again
 		prerequisite = { 
-			focus = PRO_Clan_Kyrze 
+			focus = PRO_Support_Clan_Kyrze 
 			focus = PRO_Clan_Mudhorn
 		}
-		relative_position_id = PRO_Clan_Kyrze	
+		relative_position_id = PRO_Support_Clan_Kyrze
 		x = 1
 		y = 1
 		cost = 5
+		available = {
+			ROOT = {
+				owns_state = 510
+				owns_state = 511
+				owns_state = 512
+				owns_state = 26
+			}
+		}
 		completion_reward = {
 			ROOT = {
 				remove_ideas = PRO_divided_people
@@ -1152,6 +1164,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_cosmetic_tag = PRO_Reclaimed_democratic
 			MAN = {
 				every_core_state = {
 					add_core_of = ROOT
@@ -1262,6 +1275,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			set_cosmetic_tag = PRO_Reclaimed_democratic
 			MAN = {
 				every_core_state = {
 					add_core_of = ROOT

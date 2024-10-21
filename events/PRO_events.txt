@@ -9,7 +9,6 @@ country_event = {
 	id = PRO.1
 	title = PRO.1.title
 	desc = PRO.1.desc
-	picture = GFX_report_event
 	is_triggered_only = yes
     option = {
 		name = PRO.1.a
@@ -31,10 +30,42 @@ country_event = {
 	}
 }
 country_event = {
+	id = PRO.2
+	title = PRO.2.title
+	desc = PRO.2.desc
+	is_triggered_only = yes
+    option = {
+		name = PRO.2.a
+		trigger = {
+		}
+    }
+}
+country_event = {
+	id = PRO.20
+	title = PRO.20.title
+	desc = PRO.20.desc
+	is_triggered_only = yes
+    option = {
+		name = PRO.20.a
+		trigger = {
+		}
+		ROOT = {
+			complete_national_focus = PRO_Support_Clan_Kyrze
+    	}
+    }
+	option = {
+		name = PRO.20.b
+		trigger = {
+		}
+		ROOT = {
+			complete_national_focus = PRO_Clan_Mudhorn
+    	}
+    }
+}
+country_event = {
 	id = PRO.21
 	title = PRO.21.title
 	desc = PRO.21.desc
-	picture = GFX_report_event
 	is_triggered_only = yes
     option = {
 		name = PRO.21.a
@@ -46,7 +77,6 @@ country_event = {
 	id = PRO.22
 	title = PRO.22.title
 	desc = PRO.22.desc
-	picture = GFX_report_event
 	is_triggered_only = yes
     option = {
 		name = PRO.22.a
@@ -59,7 +89,6 @@ country_event = {
 	id = PRO.23
 	title = PRO.23.title
 	desc = PRO.23.desc
-	picture = GFX_report_event
 	is_triggered_only = yes
     option = {
 		name = PRO.23.a
@@ -79,7 +108,6 @@ country_event = {
 	id = PRO.24
 	title = PRO.24.title
 	desc = PRO.24.desc
-	picture = GFX_report_event
 	is_triggered_only = yes
     option = {
 		name = PRO.24.a
@@ -102,7 +130,6 @@ country_event = {
 	id = PRO.25
 	title = PRO.25.title
 	desc = PRO.25.desc
-	picture = GFX_report_event
 	is_triggered_only = yes
     option = {
 		name = PRO.25.a
@@ -114,7 +141,6 @@ country_event = {
 	id = fenn_shysha.1
 	title = "The Nagai Invasion"
 	desc = newsenate.1.desc
-	picture = GFX_report_event
 	is_triggered_only = yes
     option = {
 		name = "We must fight off these invaders"
@@ -128,7 +154,6 @@ country_event = {
 	id = fenn_shysha.2
 	title = "The Liberation of Nagi"
 	desc = newsenate.1.desc
-	picture = GFX_report_event
 	is_triggered_only = yes
     option = {
 		name = "We will send forces to help the Nagai take back their homeworld"
